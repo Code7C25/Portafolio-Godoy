@@ -1,25 +1,25 @@
 /*seccion de sobremi*/
 .sobremi {
     display: flex;
+    width: 100%; /*ancho del contenedor*/
     justify-content: center; /*centra el contenido*/
+    background-color: #1f3f74; /*color de fondo*/
 }
 
 .container-sobremi {
     display: flex;
-    width: 50%; /*ancho del contenedor*/
+    width: 100%; /*ancho del contenedor*/
     padding: 2rem; /*espacio interno*/
     margin-top: 5rem; /*margen superior*/
     line-height: 2.5rem; /*espacio entre los parrafos*/
     font-size: large; /*tamaño de la fuente*/
-    color: azure; /*color de la fuente*/
+    color: #b2d9f3; /*color de la fuente*/
     gap: 2rem; /*espacio entre los elementos*/
-    align-items: center; /*alinea los elementos al centro*/
-    
+    align-items: self-start; /*alinea los elementos al centro*/
 }
 
 .img-perfil {
-    border-radius: 50%;/*bordes redondeados*/
-    max-width: 120px; /* Tamaño máximo de la imagen */
+    max-width: 360px; /* Tamaño máximo de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la imagen */
 }
