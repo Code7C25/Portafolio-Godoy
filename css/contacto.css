@@ -1,0 +1,85 @@
+/* Sección de Contacto */
+#contacto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #14366d;
+    padding: 2rem 0;
+}
+
+#contacto h2 {
+    color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contacto ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#contacto li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+#contacto li:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+
+#contacto a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #b2d9f3; /* Color del texto */
+}
+
+#contacto svg {
+    width: 40px; /* Tamaño reducido para los íconos */
+    height: 40px;
+    fill: #b2d9f3; /* Color del SVG */
+    transition: fill 0.3s ease;
+}
+
+#contacto a:hover svg {
+    fill: #ffffff; /* Color al pasar el cursor */
+}
+
+#contacto h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contacto ul {
+        flex-direction: column; /* Apilar elementos en móviles */
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    #contacto li {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #contacto svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #contacto h4 {
+        font-size: 0.9rem;
+    }
+}

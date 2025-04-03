@@ -15,11 +15,12 @@ body {
     flex-direction: column; /*direccion de los elementos -parte4 */
     background: var(--body-bg-color); /*color de fondo*/
     color: var(--text-color); /*color de la fuente*/
-    font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 h1,h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*fuente*/
     color: var(--colorh1-color); /*color de los títulos*/
 }
 
@@ -36,6 +37,7 @@ a:hover {
 
 /* Estilo del header */
 header {
+    max-height: 50px; /* Altura del header */
     background-color: #4569ad;
     display: flex; /* Activa Flexbox */
     align-items: center; /* Centra verticalmente los elementos */
@@ -51,7 +53,7 @@ header img {
 }
 
 /*Titulo del header*/
-header h1 {
+.titulo {
     display: flex; /* Flexbox */
     margin: 3rem; /* Margen superior e inferior */
     justify-content: flex-start; /* Centrado en pantallas pequeñas */
@@ -59,7 +61,7 @@ header h1 {
 
 /*barra de navegacion*/
 .navigation {
-    display: flex; /*flexbox*/
+    display: flex; /*flexbox*/;
     gap: 3rem; /*espacio entre los elementos*/
     list-style: none; /*quita los puntos de la lista*/
     justify-content: flex-end; /*justifica los elementos a la derecha*/
