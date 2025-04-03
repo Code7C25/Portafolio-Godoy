@@ -94,3 +94,76 @@
     width: 50%;
     }
 }
+
+/* Contenedor de botones */
+.proyecto-botones {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo base para botones */
+.proyecto a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--btn-bg-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 120px;
+    text-decoration: none;
+    margin: 0; /* Elimina el margin-right y margin-top original */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo hover para botones */
+.proyecto a:hover {
+    background-color: var(--btn-hover-bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo específico para "Tecnologías usadas" */
+.proyecto a:nth-child(2) {
+    background-color: transparent;
+    border: 2px solid var(--btn-bg-color);
+    color: #b2d9f3;
+}
+
+.proyecto a:nth-child(2):hover {
+    background-color: rgba(31, 63, 116, 0.5);
+    color: #ffffff;
+}
+
+/* Efecto para todo el proyecto al hover */
+.proyecto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .proyecto-botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .proyecto a {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    
+    .proyecto:hover {
+        transform: none; /* Elimina el efecto en móviles para mejor usabilidad */
+    }
+}
