@@ -128,18 +128,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo específico para "Tecnologías usadas" */
-.proyecto a:nth-child(2) {
-    background-color: transparent;
-    border: 2px solid var(--btn-bg-color);
-    color: #b2d9f3;
-}
-
-.proyecto a:nth-child(2):hover {
-    background-color: rgba(31, 63, 116, 0.5);
-    color: #ffffff;
-}
-
 /* Efecto para todo el proyecto al hover */
 .proyecto {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
